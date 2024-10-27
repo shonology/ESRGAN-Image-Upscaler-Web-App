@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>ESRGAN Image Upscaling</h1>
+  <div class="glass">
+    <h2>Upload an Image to Upscale</h2>
+    <input type="file" id="fileInput" (change)="onFileSelected($event)">
+    <label for="fileInput">Choose File</label>
+    <button (click)="onUpload()">Upload</button>
+    <a #downloadLink style="display: none">Download Processed Image</a>
+  </div>
+</div>
