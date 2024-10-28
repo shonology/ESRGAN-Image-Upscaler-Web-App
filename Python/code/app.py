@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load ESRGAN model using TensorFlow's built-in methods
-MODEL_PATH = r'C:\Users\Shoun\esg\Python\code'  # Directory containing saved_model.pb and variables/
+MODEL_PATH = r'C:\US\ABS\esg\Python\code'  # Directory containing saved_model.pb and variables/
 model = tf.saved_model.load(MODEL_PATH)
 
 def preprocess_image(image_data):
